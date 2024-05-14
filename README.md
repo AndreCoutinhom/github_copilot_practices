@@ -6,6 +6,8 @@
   
 </div>
 
+<img width="100%" src="https://user-images.githubusercontent.com/8989346/136876224-bac0a91f-63a8-45ea-b5fc-6618bddf2335.gif" />
+
 ![image](https://github.com/AndreCoutinhom/github_copilot_practices/assets/91290799/b70c08e2-e908-448f-b06a-7564a9a42886)
 
 ### Faça esse curso de IA para Programação e:
@@ -20,7 +22,10 @@
 
 Neste curso vamos desenvolver um jogo de Pong. Se você ainda não jogou esse jogo é, basicamente, um quadro no qual temos dois jogadores representados por hastes verticais. Sendo um deles nós, que somos o jogador à esquerda e o outro jogador à direita, que é a representação da máquina, nosso oponente.
 
-<img src="https://www.retrogames.cz/games/530/Pong-gameplay.gif">
+<div align="center">
+  <img src="https://www.retrogames.cz/games/530/Pong-gameplay.gif">
+
+</div>
 
 O objetivo é pontuar. A bola vai se movendo na tela e sempre que ela bate em uma das hastes, que representam os jogadores, essa bola é rebatida para o outro lado. Aquele jogador que não acertar a bola, toma um ponto.
 

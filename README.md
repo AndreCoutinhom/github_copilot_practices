@@ -8,7 +8,7 @@
 
 <img width="100%" src="https://user-images.githubusercontent.com/8989346/136876224-bac0a91f-63a8-45ea-b5fc-6618bddf2335.gif" />
 
-![image](https://github.com/AndreCoutinhom/github_copilot_practices/assets/91290799/b70c08e2-e908-448f-b06a-7564a9a42886)
+![image](https://github.com/AndreCoutinhom/github_copilot_practices/assets/91290799/2d3f0467-3ecd-4f09-89d5-5e1f6a982c26)
 
 ### Faça esse curso de IA para Programação e:
 

@@ -35,6 +35,9 @@ Neste curso utilizaremos o VS Code e iremos instalar o GitHub Copilot Labs.
 
 O principal neste curso não é necessariamente o jogo que vai sair, apesar de ter várias coisas legais que aprenderemos nesse processo, o principal é entender como se comunicar com a máquina.
 
-<img src="https://user-images.githubusercontent.com/22723/144143451-dc9fd535-ef22-4077-8ffe-dbbe5d322805.gif">
+<div align="right">
+    <img align="center" height="150" width="180" src="https://github.com/images/modules/site/copilot/productivity-bg-head.png">
+
+</div>
 
 ---

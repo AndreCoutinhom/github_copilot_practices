@@ -1,8 +1,8 @@
 # GitHub Copilot e ChatGPT: impulsionando seu desenvolvimento com IA
 
 <div align="center">
-  <img align="center" height="180" width="180" src="https://octodex.github.com/images/daftpunktocat-thomas.gif">
-  <img align="center" height="180" width="180" src="https://octodex.github.com/images/daftpunktocat-guy.gif">
+  <img align="center" height="150" width="150" src="https://octodex.github.com/images/daftpunktocat-thomas.gif">
+  <img align="center" height="150" width="150" src="https://octodex.github.com/images/daftpunktocat-guy.gif">
   
 </div>
 

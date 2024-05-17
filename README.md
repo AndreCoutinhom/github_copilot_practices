@@ -40,4 +40,16 @@ O principal neste curso não é necessariamente o jogo que vai sair, apesar de t
 
 </div>
 
+## Ferramentas
+
+<div style="display: inline_block"><br>
+  
+<a href="https://www.microsoft.com/pt-br/microsoft-365/microsoft-office" target="_blank"><img align="center" alt="Andre-Office" height="53" width="63" src="https://geneses.com.br/wp-content/uploads/2021/07/512px-Microsoft_Office_logo_2019%E2%80%93present.svg.png"></a>
+<a href="https://www.microsoft.com/microsoft-copilot" target="_blank"><img align="center" alt="Andre-Copilot" height="56" width="56" src="https://teaching.cambriancollege.ca/wp-content/uploads/2024/02/Microsoft_365_Copilot_Icon.svg_-300x300.png"></a>
+<a href="https://p5js.org" target="_blank"><img align="center" alt="Andre-P5js" height="56" width="56" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/P5.js_icon.svg/2048px-P5.js_icon.svg.png"></a>
+<a href="https://github.com" target="_blank"><img align="center" alt="Andre-GitHub" height="53" width="53" src="https://cdn.icon-icons.com/icons2/836/PNG/512/Github_icon-icons.com_66788.png"></a>
+<a href="https://code.visualstudio.com" target="_blank"><img align="center" alt="Andre-VS" height="53" width="53" src="https://code.visualstudio.com/assets/apple-touch-icon.png"></a>
+
+</div>  
+
 ---

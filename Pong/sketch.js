@@ -16,8 +16,6 @@ let computerScore = 0;
 
 let myFont;
 
-
-
 class Racket {
     constructor(x) {
         this.x = x;
@@ -159,16 +157,16 @@ let player;
 let computer;
 
 function preload() {
-    ballImage = loadImage('pokeball.png');
-    playerImage = loadImage('player.png');
-    computerImage = loadImage('computer.png');
-    backgroundImage = loadImage('background.png');
-    bounceSound = loadSound('bounce_sound.wav');
-    goalSound = loadSound('goal_sound.wav');
-    raichuScore = loadSound('raichu_sound.wav');
-    gyradosScore = loadSound('gyrados_sound.wav');
-    myFont = loadFont('pokemon_font.ttf');
-    backgroundMusic = loadSound('background_music.wav');
+    ballImage = loadImage('images/pokeball.png');
+    playerImage = loadImage('images/player.png');
+    computerImage = loadImage('images/computer.png');
+    backgroundImage = loadImage('images/background.png');
+    bounceSound = loadSound('sound/bounce_sound.wav');
+    goalSound = loadSound('sound/goal_sound.wav');
+    raichuScore = loadSound('sound/raichu_sound.wav');
+    gyradosScore = loadSound('sound/gyrados_sound.wav');
+    backgroundMusic = loadSound('sound/background_music.wav');
+    myFont = loadFont('font/pokemon_font.ttf');
 }
 
 

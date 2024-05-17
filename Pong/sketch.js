@@ -1,9 +1,14 @@
+let ballImage;
+let playerImage;
+let computerImage;
+let backgroundImage;
+
 class Racket {
     constructor(x) {
         this.x = x;
         this.y = height / 2;
-        this.w = 10;
-        this.h = 60;
+        this.w = 20;
+        this.h = 100;
     }
     update() {
 
@@ -23,8 +28,14 @@ class Racket {
         this.y = constrain(this.y, 0, height - this.h);
     }
     draw() {
-        fill(color(255, 255, 255));
-        rect(this.x, this.y, this.w, this.h);
+
+        if (this.x < width / 2) {
+            image(playerImage, this.x, this.y, this.w, this.h);
+        } else {
+            image(computerImage, this.x, this.y, this.w, this.h);
+        }        
+
+
     }
 }
 
@@ -32,15 +43,26 @@ class Ball {
     constructor(x, y, r) {
         this.x = x;
         this.y = y;
-        this.r = r;
+        this.r = 15;
         const maximumSpeed = 5;
         this.xspeed = Math.floor(Math.random() * maximumSpeed * 2) - maximumSpeed;
         this.yspeed = Math.floor(Math.random() * maximumSpeed * 2) - maximumSpeed;
+        this.reset();
+    }
+
+    reset() {
+        this.x = width / 2;
+        this.y = height / 2;
+        this.xspeed = Math.floor(Math.random() * 10) - 5;
+        this.yspeed = Math.floor(Math.random() * 10) - 5;
+        this.angulo = 0;
     }
 
     update() {
         this.x += this.xspeed;
         this.y += this.yspeed;
+        // rotaciona de acordo com a velocidade x e y
+        this.angulo += Math.sqrt(this.xspeed * this.xspeed + this.yspeed * this.yspeed) / 100
 
         if (this.x < this.r || this.x > width - this.r) {
             this.reset();
@@ -60,16 +82,14 @@ class Ball {
     }
 }
 
-    reset() {
-        this.x = width / 2;
-        this.y = height / 2;
-        this.xspeed = Math.floor(Math.random() * 10) - 5;
-        this.yspeed = Math.floor(Math.random() * 10) - 5;
-    }
-
     draw() {
-        fill(255, 255, 255);
-        ellipse(this.x, this.y, this.r * 2, this.r * 2);
+        // rotaciona antes de desenhar
+        push();
+        translate(this.x, this.y);
+        rotate(this.angulo);
+        imageMode(CENTER);
+        image(ballImage, 0, 0, this.r * 2, this.r * 2);
+        pop();
     }
 }
 
@@ -106,6 +126,14 @@ let ball;
 let player;
 let computer;
 
+function preload() {
+    ballImage = loadImage('pokeball.png');
+    playerImage = loadImage('player.png');
+    computerImage = loadImage('computer.png');
+    backgroundImage = loadImage('background.png');
+}
+
+
 function setup() {
     createCanvas(800, 400);
     ball = new Ball(400, 200, 25);
@@ -114,7 +142,7 @@ function setup() {
 }
 
 function draw() {
-    background(0, 0, 0);
+    image(backgroundImage, 0, 0, width, height);
     ball.update();
     ball.draw();
     player.update();

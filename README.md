@@ -8,7 +8,7 @@
 
 <img width="100%" src="https://user-images.githubusercontent.com/8989346/136876224-bac0a91f-63a8-45ea-b5fc-6618bddf2335.gif" />
 
-![image](https://github.com/AndreCoutinhom/github_copilot_practices/assets/91290799/b70c08e2-e908-448f-b06a-7564a9a42886)
+![image](https://github.com/AndreCoutinhom/github_copilot_practices/assets/91290799/349e53fc-bfc3-4210-9bae-79fb67d68ec2)
 
 ### Faça esse curso de IA para Programação e:
 
@@ -35,6 +35,21 @@ Neste curso utilizaremos o VS Code e iremos instalar o GitHub Copilot Labs.
 
 O principal neste curso não é necessariamente o jogo que vai sair, apesar de ter várias coisas legais que aprenderemos nesse processo, o principal é entender como se comunicar com a máquina.
 
-<img src="https://user-images.githubusercontent.com/22723/144143451-dc9fd535-ef22-4077-8ffe-dbbe5d322805.gif">
+<div align="right">
+    <img align="center" height="150" width="180" src="https://github.com/images/modules/site/copilot/productivity-bg-head.png">
+
+</div>
+
+## Ferramentas
+
+<div style="display: inline_block"><br>
+  
+<a href="https://www.microsoft.com/pt-br/microsoft-365/microsoft-office" target="_blank"><img align="center" alt="Andre-Office" height="53" width="63" src="https://geneses.com.br/wp-content/uploads/2021/07/512px-Microsoft_Office_logo_2019%E2%80%93present.svg.png"></a>
+<a href="https://www.microsoft.com/microsoft-copilot" target="_blank"><img align="center" alt="Andre-Copilot" height="56" width="56" src="https://teaching.cambriancollege.ca/wp-content/uploads/2024/02/Microsoft_365_Copilot_Icon.svg_-300x300.png"></a>
+<a href="https://p5js.org" target="_blank"><img align="center" alt="Andre-P5js" height="56" width="56" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/P5.js_icon.svg/2048px-P5.js_icon.svg.png"></a>
+<a href="https://github.com" target="_blank"><img align="center" alt="Andre-GitHub" height="53" width="53" src="https://cdn.icon-icons.com/icons2/836/PNG/512/Github_icon-icons.com_66788.png"></a>
+<a href="https://code.visualstudio.com" target="_blank"><img align="center" alt="Andre-VS" height="53" width="53" src="https://code.visualstudio.com/assets/apple-touch-icon.png"></a>
+
+</div>  
 
 ---

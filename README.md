@@ -49,6 +49,7 @@ O principal neste curso não é necessariamente o jogo que vai sair, apesar de t
 <a href="https://p5js.org" target="_blank"><img align="center" alt="Andre-P5js" height="56" width="56" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/P5.js_icon.svg/2048px-P5.js_icon.svg.png"></a>
 <a href="https://github.com" target="_blank"><img align="center" alt="Andre-GitHub" height="53" width="53" src="https://cdn.icon-icons.com/icons2/836/PNG/512/Github_icon-icons.com_66788.png"></a>
 <a href="https://code.visualstudio.com" target="_blank"><img align="center" alt="Andre-VS" height="53" width="53" src="https://code.visualstudio.com/assets/apple-touch-icon.png"></a>
+<a href="https://www.movavi.com/pt/video-editor-plus/?utm_campaign=180764634&utm_campaignid=180764634&utm_adgroupid=47782265695&gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLO6c7FyO9RurcD2-DpwuNXj6_osiiLSXPfRU9MMO--fL3knm3mt1xEaAv9HEALw_wcB" target="_blank"><img align="center" alt="Andre-Movavi" height="53" width="53" src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxjow3Vx36Cedo7vSl5J8ji0PNstTk1Y3A8I.dOI0ze0q2gemc4n3T8uOHhI9YhOd7P4phJpBUtiTDKqxLyxiJJQ-&format=source"></a>
 
 </div>  
 

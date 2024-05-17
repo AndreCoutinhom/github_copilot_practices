@@ -3,6 +3,21 @@ let playerImage;
 let computerImage;
 let backgroundImage;
 
+let bounceSound;
+let goalSound;
+
+let backgroundMusic;
+
+let raichuScore;
+let gyradosScore;
+
+let playerScore = 0;
+let computerScore = 0;
+
+let myFont;
+
+
+
 class Racket {
     constructor(x) {
         this.x = x;
@@ -14,7 +29,7 @@ class Racket {
 
         // se a raquete for o jogador
         if (this.x < width / 2) {
-            this.y = mouseY;
+            this.y = mouseY - this.h / 2;
         } else {
             // se a bola está em cima, vai pra cima
             if (ball.y < this.y) {
@@ -65,16 +80,33 @@ class Ball {
         this.angulo += Math.sqrt(this.xspeed * this.xspeed + this.yspeed * this.yspeed) / 100
 
         if (this.x < this.r || this.x > width - this.r) {
+            if (this.x < this.r) {
+                setTimeout(() => {
+                    gyradosScore.play();
+                }, 500);
+                computerScore++;
+                
+
+            } else {
+                setTimeout(() => {
+                    raichuScore.play();
+                }, 500);
+                playerScore++;
+                
+            }
+            goalSound.play();
             this.reset();
         }
 
         if (this.y < this.r || this.y > height - this.r) {
             this.yspeed *= -1;
+            bounceSound.play();
         }
 
         
         if (colideCircleRect(this.x, this.y, this.r, player.x, player.y, player.w, player.h) || 
         colideCircleRect(this.x, this.y, this.r, computer.x, computer.y, computer.w, computer.h)) {
+            bounceSound.play();
             this.xspeed *= -1;
             this.xspeed *= 1.1;
             this.yspeed *= 1.1;
@@ -131,6 +163,12 @@ function preload() {
     playerImage = loadImage('player.png');
     computerImage = loadImage('computer.png');
     backgroundImage = loadImage('background.png');
+    bounceSound = loadSound('bounce_sound.wav');
+    goalSound = loadSound('goal_sound.wav');
+    raichuScore = loadSound('raichu_sound.wav');
+    gyradosScore = loadSound('gyrados_sound.wav');
+    myFont = loadFont('pokemon_font.ttf');
+    backgroundMusic = loadSound('background_music.wav');
 }
 
 
@@ -139,6 +177,12 @@ function setup() {
     ball = new Ball(400, 200, 25);
     player = new Racket(30);
     computer = new Racket(width - 30 - 10);
+
+    textSize(25);
+    textFont(myFont);
+    textAlign(CENTER, CENTER);
+
+    backgroundMusic.loop();
 }
 
 function draw() {
@@ -149,5 +193,11 @@ function draw() {
     player.draw();
     computer.update();
     computer.draw();
+
+    // uma cor diferente para cada texto. 
+    // cor do jogador é vermelha e do computador é azul
+    fill(color('white'));
+    text("Raichu: " + playerScore, width / 4, 50);
+    text("Gyrados: " + computerScore, width * 3 / 4, 50);
 }
 

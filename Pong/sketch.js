@@ -53,23 +53,44 @@ class Racket {
 }
 
 class Ball {
-    constructor(x, y, r) {
+    constructor(x, y) {
         this.x = x;
         this.y = y;
         this.r = 15;
         const maximumSpeed = 5;
         this.xspeed = Math.floor(Math.random() * maximumSpeed * 2) - maximumSpeed;
         this.yspeed = Math.floor(Math.random() * maximumSpeed * 2) - maximumSpeed;
-        this.reset();
+        if (this.xspeed === 0 || this.xspeed === 1) {
+            this.xspeed = 2;
+        } else if (this.xspeed === -1) {
+            this.xspeed = -2;
+        }
+        else if (this.yspeed === 0) {
+            this.yspeed = 2;
+        } else {    
+            this.reset();
+        }
+        this.angulo = 0;
+        console.log(this.xspeed, this.yspeed);
     }
 
     reset() {
         this.x = width / 2;
         this.y = height / 2;
-        this.xspeed = Math.floor(Math.random() * 10) - 5;
-        this.yspeed = Math.floor(Math.random() * 10) - 5;
+        const maximumSpeed = 5;
+        this.xspeed = Math.floor(Math.random() * maximumSpeed * 2) - maximumSpeed;
+        this.yspeed = Math.floor(Math.random() * maximumSpeed * 2) - maximumSpeed;
+        if (this.xspeed === 0 || this.xspeed === 1) {
+            this.xspeed = 2;
+        } else if (this.xspeed === -1) {
+            this.xspeed = -2;
+        }
+        else if (this.yspeed === 0) {
+            this.yspeed = 2;
+        }
         this.angulo = 0;
     }
+
 
     update() {
         this.x += this.xspeed;
@@ -165,7 +186,7 @@ function preload() {
     goalSound = loadSound('sound/goal_sound.wav');
     raichuScore = loadSound('sound/raichu_sound.wav');
     gyradosScore = loadSound('sound/gyrados_sound.wav');
-    backgroundMusic = loadSound('sound/background_music.wav');
+    //backgroundMusic = loadSound('sound/background_music.wav');
     myFont = loadFont('font/pokemon_font.ttf');
 }
 
@@ -180,7 +201,7 @@ function setup() {
     textFont(myFont);
     textAlign(CENTER, CENTER);
 
-    backgroundMusic.loop();
+    //backgroundMusic.loop();
 }
 
 function draw() {

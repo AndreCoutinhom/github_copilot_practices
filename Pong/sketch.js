@@ -71,7 +71,6 @@ class Ball {
             this.reset();
         }
         this.angulo = 0;
-        console.log(this.xspeed, this.yspeed);
     }
 
     reset() {
@@ -186,7 +185,7 @@ function preload() {
     goalSound = loadSound('sound/goal_sound.wav');
     raichuScore = loadSound('sound/raichu_sound.wav');
     gyradosScore = loadSound('sound/gyrados_sound.wav');
-    //backgroundMusic = loadSound('sound/background_music.wav');
+    backgroundMusic = loadSound('sound/background_music.wav');
     myFont = loadFont('font/pokemon_font.ttf');
 }
 
@@ -201,7 +200,7 @@ function setup() {
     textFont(myFont);
     textAlign(CENTER, CENTER);
 
-    //backgroundMusic.loop();
+    backgroundMusic.loop();
 }
 
 function draw() {
